@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bande Animée de Technologies</title>
+  <style>
+    /*body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }*/
+
+    .carousel-container {
+
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+
+      position: absolute;
+      width: 90%;
+      overflow: hidden;
+
+      background-color: #fff;
+    }
+
+    .carousel {
+      display: flex;
+      animation: scroll 10s linear infinite;
+
+    }
+
+    .carousel img {
+      width: 30px; /* Taille des icônes */
+      height: 37px;
+      margin: 0 10px; /* Espacement entre les icônes */
+    }
+
+    /* Effet de flou aux extrémités */
+    .carousel-container::before,
+    .carousel-container::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100px; /* Largeur du flou */
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .carousel-container::before {
+      left: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+
+    .carousel-container::after {
+      right: 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+
+
+        .logo-item {
+    display: flex;
+    align-items: center; /* Centre verticalement l'image et le texte */
+    margin: 0 20px;     /* Espacement entre les logos */
+    }
+
+    .logo-item img {
+    width: 23px;        /* Ajustez la taille de l'image selon vos besoins */
+    height: 25px;
+    margin-right: 10px; /* Espacement entre l'image et le texte */
+    }
+
+    .logo-text {
+    font-size: 0.8em;
+    color: #333;        /* Couleur du texte, ajustez si nécessaire */
+    }
+
+
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(calc(-100px * 6)); /* Ajustez en fonction du nombre d'éléments visibles */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="logo-item">
+        <img src="assets/images/logos/1.png" alt="Pandas">
+        <span class="logo-text">Pandas</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/2.png" alt="PowerBI">
+        <span class="logo-text">PowerBI</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/3.png" alt="Vertex AI">
+        <span class="logo-text">Vertex AI</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/4.png" alt="Python">
+        <span class="logo-text">Python</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/5.png" alt="Azure">
+        <span class="logo-text">Azure</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/6.png" alt="GCP">
+        <span class="logo-text">GCP</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/7.png" alt="DAX">
+        <span class="logo-text">DAX</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/8.png" alt="MySQL">
+        <span class="logo-text">MySQL</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/9.png" alt="Excel">
+        <span class="logo-text">Excel</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/10.png" alt="BigQuery">
+        <span class="logo-text">BigQuery</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/11.png" alt="GitHub">
+        <span class="logo-text">GitHub</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/12.png" alt="Flask">
+        <span class="logo-text">Flask</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/13.png" alt="Docker">
+        <span class="logo-text">Docker</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/14.png" alt="Kubernetes">
+        <span class="logo-text">Kubernetes</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/15.png" alt="Apache Airflow">
+        <span class="logo-text">Apache Airflow</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/16.png" alt="React.js">
+        <span class="logo-text">React.js</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/17.png" alt="Node.js">
+        <span class="logo-text">Node.js</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/18.png" alt="QlikSens">
+        <span class="logo-text">Qlik Sens</span>
+      </div>
+
+
+      <div class="logo-item">
+        <img src="assets/images/logos/2.png" alt="PowerBI">
+        <span class="logo-text">PowerBI</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/3.png" alt="Vertex AI">
+        <span class="logo-text">Vertex AI</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/4.png" alt="Python">
+        <span class="logo-text">Python</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/5.png" alt="Azure">
+        <span class="logo-text">Azure</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/6.png" alt="GCP">
+        <span class="logo-text">GCP</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/7.png" alt="DAX">
+        <span class="logo-text">DAX</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/8.png" alt="MySQL">
+        <span class="logo-text">MySQL</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/9.png" alt="Excel">
+        <span class="logo-text">Excel</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/10.png" alt="BigQuery">
+        <span class="logo-text">BigQuery</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/11.png" alt="GitHub">
+        <span class="logo-text">GitHub</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/12.png" alt="Flask">
+        <span class="logo-text">Flask</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/13.png" alt="Docker">
+        <span class="logo-text">Docker</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/14.png" alt="Kubernetes">
+        <span class="logo-text">Kubernetes</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/15.png" alt="Apache Airflow">
+        <span class="logo-text">Apache Airflow</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/16.png" alt="React.js">
+        <span class="logo-text">React.js</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/17.png" alt="Node.js">
+        <span class="logo-text">Node.js</span>
+      </div>
+
+      <div class="logo-item">
+        <img src="assets/images/logos/18.png" alt="QlikSens">
+        <span class="logo-text">Qlik Sens</span>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+</html>

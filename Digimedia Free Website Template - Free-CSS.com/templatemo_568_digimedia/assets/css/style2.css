@@ -1,0 +1,78 @@
+.carousel-container {
+
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+
+  background-color: #fff;
+  z-index:1;
+}
+
+.carousel {
+  display: flex;
+  animation: scroll 15s linear infinite;
+
+}
+
+.carousel img {
+  width: 30px; /* Taille des icônes */
+  height: 37px;
+  margin: 0 10px; /* Espacement entre les icônes */
+}
+
+/* Effet de flou aux extrémités */
+.carousel-container::before,
+.carousel-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 500px; /* Largeur du flou */
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.carousel-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.carousel-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+
+.logo-item {
+display: flex;
+align-items: center; /* Centre verticalement l'image et le texte */
+margin: 0 20px;     /* Espacement entre les logos */
+}
+
+.logo-item img {
+width: 23px;        /* Ajustez la taille de l'image selon vos besoins */
+height: 25px;
+margin-right: 10px; /* Espacement entre l'image et le texte */
+}
+
+.logo-text {
+font-size: 0.8em;
+color: #333;        /* Couleur du texte, ajustez si nécessaire */
+}
+
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-200px * 6)); /* Ajustez en fonction du nombre d'éléments visibles */
+  }
+}
